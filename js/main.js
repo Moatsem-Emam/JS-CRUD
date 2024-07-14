@@ -90,6 +90,7 @@ function updateProduct(index) {
     localStorage.setItem("product", JSON.stringify(arr));
     var elementToUpdate = document.getElementById("toUpdate");
     elementToUpdate.innerHTML = "Add";
+    elementToUpdate.onclick = () => addProduct(index);
     display(arr);
     //clearForm();
 }
